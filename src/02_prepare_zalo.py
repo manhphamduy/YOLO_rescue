@@ -10,7 +10,7 @@ import shutil
 # --- Cấu hình ---
 ZALO_DATA_ROOT = '../data/zalo_dataset' # Thư mục chứa 'annotations' và 'samples'
 OUTPUT_DIR = '../datasets_yolo/zalo/'
-ANNOTATIONS_FILE = os.path.join(ZALO_DATA_ROOT, 'annotations', 'train.json')
+ANNOTATIONS_FILE = os.path.join(ZALO_DATA_ROOT, 'annotations', 'annotations.json')
 SAMPLES_DIR = os.path.join(ZALO_DATA_ROOT, 'samples')
 VAL_SPLIT_RATIO = 0.15
 
