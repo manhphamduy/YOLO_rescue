@@ -14,8 +14,6 @@ def train_on_visdrone():
         project='../runs/detect',
         name='train_visdrone',
         exist_ok=True,
-        # Tự động resume từ checkpoint nếu bị gián đoạn
-        resume=True,
         # Data Augmentation (YOLOv8 đã bật mặc định với các giá trị tốt)
         # Các tham số này chỉ để minh họa, bạn có thể tinh chỉnh
         degrees=5.0,
