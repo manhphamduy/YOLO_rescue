@@ -22,7 +22,8 @@ def train_on_visdrone():
         translate=0.1,
         scale=0.1,
         fliplr=0.5,
-        mosaic=1.0
+        mosaic=1.0,
+        device=0
     )
     print("--- VisDrone Training Finished ---")
 
