@@ -20,7 +20,7 @@ def run_inference():
         video_path = os.path.join(TEST_DIR, video_id, 'drone_video.mp4')
         if not os.path.exists(video_path): continue
 
-        preds = model.predict(source=video_path, stream=True, conf=CONF_THRESHOLD, imgsz=640)
+        preds = model.predict(source=video_path, stream=True, conf=CONF_THRESHOLD, imgsz=640, device=0)
         
         video_annotations = {"bboxes": []}
         frame_idx = 0

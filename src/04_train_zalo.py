@@ -23,7 +23,8 @@ def train_on_zalo():
         
         # --- Các tham số quan trọng khác ---
         patience=30, optimizer='AdamW', lr0=1e-3, lrf=1e-2,
-        cache=False
+        cache=False,
+        device=0
     )
     print("--- Zalo AI Training Finished ---")
 
